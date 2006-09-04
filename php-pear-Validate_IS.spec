@@ -7,13 +7,13 @@
 Summary:	%{_pearname} - Validation class for Iceland
 Summary(pl):	%{_pearname} - Klasa sprawdzaj±ca poprawno¶æ dla Islandii
 Name:		php-pear-%{_pearname}
-Version:	0.1.1
+Version:	0.2.0
 Release:	1
 Epoch:		0
 License:	New BSD
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	04afd1ffbb48496fd62ff30e9ed93e31
+# Source0-md5:	eb28115c77c0459f05560cd13959a562
 URL:		http://pear.php.net/package/Validate_IS/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -27,6 +27,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Package containes locale validation for IS (Iceland) such as:
 - SSN
 - Postal Code
+- Address
 - Telephone
 
 In PEAR status of this package is: %{_status}.
@@ -35,6 +36,7 @@ In PEAR status of this package is: %{_status}.
 Pakiet do sprawdzania poprawno¶ci dla Islandii danych takich jak:
 - numer ubezpieczenia spo³ecznego (SSN)
 - kod pocztowy
+- adres
 - numer telefonu
 
 Ta klasa ma w PEAR status: %{_status}.
@@ -68,8 +70,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc install.log
 %{php_pear_dir}/.registry/*.reg
 %{php_pear_dir}/Validate/IS.php
-%dir %{php_pear_dir}/data/Validate_IS
-%{php_pear_dir}/data/Validate_IS/IS_postcodes.txt
+%{php_pear_dir}/data/Validate_IS
 
 %files tests
 %defattr(644,root,root,755)
