@@ -5,7 +5,7 @@
 %define		_pearname	Validate_IS
 
 Summary:	%{_pearname} - Validation class for Iceland
-Summary(pl.UTF-8):   %{_pearname} - Klasa sprawdzająca poprawność dla Islandii
+Summary(pl.UTF-8):	%{_pearname} - Klasa sprawdzająca poprawność dla Islandii
 Name:		php-pear-%{_pearname}
 Version:	0.2.0
 Release:	1
@@ -43,7 +43,7 @@ Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 AutoReq:	no
