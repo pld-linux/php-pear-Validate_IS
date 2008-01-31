@@ -8,7 +8,7 @@ Summary:	%{_pearname} - Validation class for Iceland
 Summary(pl.UTF-8):	%{_pearname} - Klasa sprawdzająca poprawność dla Islandii
 Name:		php-pear-%{_pearname}
 Version:	0.2.0
-Release:	1
+Release:	2
 Epoch:		0
 License:	New BSD
 Group:		Development/Languages/PHP
