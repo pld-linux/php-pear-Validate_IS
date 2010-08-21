@@ -1,15 +1,11 @@
 %include	/usr/lib/rpm/macros.php
-%define		_class		Validate
-%define		_subclass	IS
 %define		_status		alpha
 %define		_pearname	Validate_IS
-
 Summary:	%{_pearname} - Validation class for Iceland
 Summary(pl.UTF-8):	%{_pearname} - Klasa sprawdzająca poprawność dla Islandii
 Name:		php-pear-%{_pearname}
 Version:	0.2.0
-Release:	2
-Epoch:		0
+Release:	3
 License:	New BSD
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -18,7 +14,8 @@ URL:		http://pear.php.net/package/Validate_IS/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
-Requires:	php-common >= 3:4.1.0
+Requires:	php-common >= 3:4.2.0
+Requires:	php-ctype
 Requires:	php-pear
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -45,7 +42,7 @@ Ta klasa ma w PEAR status: %{_status}.
 Summary:	Tests for PEAR::%{_pearname}
 Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development
-Requires:	%{name} = %{epoch}:%{version}-%{release}
+Requires:	%{name} = %{version}-%{release}
 AutoReq:	no
 
 %description tests
